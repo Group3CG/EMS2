@@ -1,0 +1,43 @@
+ Saturday, October 08, 2016 3:31 PM
+\*****************************************************************************************
+File Name :Pseudo Code for Salary Grade Relation
+Author Name :Group_3
+Description :A program with a function to calculate salary based on grades
+Version :1.0
+******************************************************************************************/
+BEGIN
+DECLARE grade as STRING
+Take grade from user AND STORE in grade
+findsalary()
+END
+
+SUB findsalary()
+
+IF (grade=='M1') THEN
+SET sal=100000;
+
+ELSE IF (grade=='M1') THEN
+SET sal=200000;
+
+ELSE IF (grade=='M2') THEN
+SET sal=300000;
+
+ELSE IF (grade=='M3') THEN
+SET sal=400000;
+
+ELSE IF (grade=='M4') THEN
+SET sal=500000;
+
+ELSE IF (grade=='M5') THEN
+SET sal=600000;
+
+ELSE IF (grade=='M6') THEN
+SET sal=700000;
+
+ELSE IF (grade=='M7') THEN
+SET sal=800000;
+
+ELSE EXCEPTION
+IF(grade!='M1'||grade!='M2'||grade!='M3'||grade!='M4'||grade!='M5'||grade!='M6'||grade!='M7')
+PRINT 'ERROR MESSAGE'
+END SUB

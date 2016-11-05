@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<head>
+	<title>Homepage</title>
+	<script>
+		function loginType(loginData) {
+			//var newWindow = window.open("","Welcome","")
+			
+			if(loginData == 'user') {
+				window.location.href = "user_login_page.html"
+			} else if (loginData == 'admin') {
+				window.location.href = "admin_login_page.html"
+			}
+		}
+	</script>
+	</head>
+	<body>
+		<table name="loginTable">
+			<tr>
+				<td>Login type: </td>
+				<td><select name="logintype" onchange="loginType(this.options[this.selectedIndex].value)" >
+					<option value="default">--Select option--</option>
+					<option value="user">User</option>
+					<option value="admin">Admin</option></td>
+			</tr>
+		</table>
+	</body>
+
+</html>
